@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background: radial-gradient(#f0483a, #d10a20);
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template:
+    "header" auto
+    "section"/
+    100vw;
+  header {
+    grid-area: header;
+   
+    .containerQatar {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      h2{
+        color: white;
+      }
+    }
+  }
+  section {
+    grid-area: section;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .fondoQ {
+
+    }
+    .containerFantasma {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 460px;
+        height: 500px;
+        flex-direction: column;
+      .imagenQ {
+        width: 35rem;
+
+      }
+      .texto {
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: radial-gradient(#f0483a, #d10a20);
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template: "header" auto "section"/100vw;
+}
+.container header {
+  grid-area: header;
+}
+.container header .containerQatar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.container header .containerQatar h2 {
+  color: white;
+}
+.container section {
+  grid-area: section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container section .containerFantasma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
+  height: 500px;
+  flex-direction: column;
+}
+.container section .containerFantasma .imagenQ {
+  width: 35rem;
+}/*# sourceMappingURL=style.css.map */
